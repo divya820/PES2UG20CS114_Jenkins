@@ -16,13 +16,13 @@ stages{
 
   stage('Deploy') {
     steps{
-      eco '---DEPLOYMENT SUCCESSFUL---'
+      echo '---DEPLOYMENT SUCCESSFUL---'
     }
   }
 }
 post {
     failure {
-        echo '---PIPELINE FAILED---'
+        eco '---PIPELINE FAILED---'
     }
   }
 }
